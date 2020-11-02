@@ -3,6 +3,7 @@ package com.byb.springcloud.controller;
 import com.byb.springcloud.entities.CommonResult;
 import com.byb.springcloud.entities.Payment;
 import com.byb.springcloud.serviec.PaymentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,7 +13,7 @@ import javax.annotation.Resource;
 
 @RestController
 public class PaymentController {
-    @Resource
+    @Autowired
     private PaymentService paymentService;
     @PostMapping(value = "/payment/create")
     public CommonResult create(Payment payment){
@@ -33,5 +34,4 @@ public class PaymentController {
             return new CommonResult(404,"没有对应记录",null);
         }
     }
-
 }
