@@ -10,11 +10,12 @@
     <version>2.3.4.RELEASE</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
+
   <groupId>com.byb.springcloud</groupId>
   <artifactId>cloud2020</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>cloud-provider-payment8001</module>
+      <module>cloud-provider-payment8001</module>
       <module>cloud-consumer-order80</module>
   </modules>
   <packaging>pom</packaging>
