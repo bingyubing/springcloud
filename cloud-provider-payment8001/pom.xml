@@ -13,6 +13,13 @@
 
 <dependencies>
     <dependency>
+<!-- 导入自己的api通用包 使用entities -->
+        <groupId>com.byb.springcloud</groupId>
+        <artifactId>cloud-api-commons</artifactId>
+        <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
         <version>2.2.2.RELEASE</version>
