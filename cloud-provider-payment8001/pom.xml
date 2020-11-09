@@ -12,6 +12,12 @@
     <artifactId>cloud-provider-payment8001</artifactId>
 
 <dependencies>
+<!--    Eureka客户端（client）-->
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
+
     <dependency>
 <!-- 导入自己的api通用包 使用entities -->
         <groupId>com.byb.springcloud</groupId>
