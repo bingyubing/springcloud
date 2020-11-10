@@ -12,7 +12,7 @@ import java.awt.*;
 
 @RestController//@RestController  可以返回多种信息 xml json 等   等于@Controller与 @RequestBody
 public class OrderController {
-    public static final String PAYMENT_URL = "http://localhost:8001";
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
     @Resource
     private RestTemplate restTemplate;
     @GetMapping("/consumer/payment/create")
