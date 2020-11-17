@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
+import javax.xml.stream.events.Comment;
 import java.awt.*;
 
 @RestController//@RestController  可以返回多种信息 xml json 等   等于@Controller与 @RequestBody
@@ -22,5 +23,9 @@ public class OrderController {
     @GetMapping("/consumer/payment/get/{id}")
     public CommonResult<Payment> getPayment(@PathVariable("id") Long id){
         return restTemplate.getForObject(PAYMENT_URL+"/payment/PaymentById/get/"+id,CommonResult.class);
+    }
+    @GetMapping("/consumer/payment/discovery")
+    public CommonResult<Payment> getserver(){
+        return restTemplate.getForObject(PAYMENT_URL+"/payment/discovery", CommonResult.class);
     }
 }
