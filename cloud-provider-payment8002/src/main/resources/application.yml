@@ -29,7 +29,7 @@ eureka:
     #true是否从EurekaServer 抓取已有的注册信息，默认为true单节点无所谓 集群必须为true才可以配合ribbon使用负载均衡
     fetch-registry: true
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+      defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka
   instance:
     instance-id: payment8002 #此项配置为在Eureka Web客户端显示服务名称
     prefer-ip-address: true #访问路径可以显示ip

@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 @Slf4j
 public class ApplicationContextConfig {
     @Bean
-    @LoadBalanced//赋予RestTemplate 负载均衡能力
+    @LoadBalanced//赋予RestTemplate 负载均衡能力  ribbon
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
