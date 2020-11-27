@@ -24,6 +24,7 @@
     <module>cloud-providerzookeeper-server8004</module>
     <module>cloud-providerconsul-payment8006</module>
     <module>cloud-consumerconsul-order801</module>
+      <module>cloud-consumeropenfeign-order801</module>
   </modules>
   <packaging>pom</packaging>
 <!--  <packaging>pom</packaging> pom 代表父工程-->
